@@ -2,12 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>My Messages.com :)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+</head>
+<center>
+    <form name="contenedor">
+        <table border="5">
+          <tr>
+            <td>
+              <p align="center">
+                <b><font color="#c44fd1">MY MESSAGES :)</font></b>
+            </td>
+        </tr>
+          <tr>
+            <td>
+              Your Message:
+              <br>
+              <br>
+              <textarea rows="5" cols="100" name="" id="texto" placeholder="ingresa aqui tu mensaje!"></textarea>
+              <br> 
+              <br>
+            </td>
+          </tr>
+            <br>
+            <tr>
+              <th>Nº Display:</th>
+              <td><input type="number" id="displace" placeholder="3" style="width:300px"></td>		
+            </tr>
+            <tr>
+              <br>
+              <br>
+              <td colspan="2" align =center ><input type="button" onclick="process();" value="CONVERTER"></td>
+            </tr>
+            <br>
+            <br>
+            <th>Encrytep:</th>
+            <tr>
+              <td colspan="1"><input type="text" id="result" style="width:300px"></td>
+            </tr>
+          </table>
+        </center>
   </body>
 </html>
