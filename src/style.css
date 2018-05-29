@@ -1,0 +1,42 @@
+ textarea {
+    resize  : none;
+    overflow: auto;
+    display : block;
+    padding : 10px;
+    margin  : 10px;
+    width   : 200px;
+    height  : 100px;
+  }
+
+body{
+    background-image:url(images/3859daf6e5dedd6f5d77285968d5f148.jpg);
+}
+table{
+    background-color: #f4ed9f;
+    padding:10px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+form{
+    padding:10px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+input{
+
+}
+
+.button{
+    background:#4c4754;
+    width: 70px;
+    height: 25px;
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+

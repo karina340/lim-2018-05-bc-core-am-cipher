@@ -1,21 +1,29 @@
 window.cipher = {
-  // ... 
-};
-function encriptar(text,displace){
+  encode: function (offset, text) {
+    text = text.toUpperCase();
+    let array = text.split('');
+    let encrypted = '';
 
-  text=text.toUpperCase();
+    array.forEach(function (element) {
+      let index = element.charCodeAt(0);
+      let nextIndex = (index - 65 + offset) % 26 + 65;
+      encrypted += String.fromCharCode(nextIndex);
+    });
+    return encrypted;
+  },
+  decode: function (offset, text) {
+    text = text.toUpperCase();
+    let array = text.split('');
+    let encrypted = '';
 
-  var array = text.split('');
-  var encrypted ="";		
-  
-  array.forEach(function(element) {
-    encrypted+=modular(element,displace);
-  });
-  return encrypted;
+    array.forEach(function (element) {
+      let index = element.charCodeAt(0);
+      let nextIndex = (index - 65) - offset;
+      if ( nextIndex < 0) nextIndex += 26;
+      nextIndex = (nextIndex % 26) + 65;
+      encrypted += String.fromCharCode(nextIndex);
+    });
+    return encrypted;
+  }
 }
 
-function modular(letter, displace){
-  let index = letter.charCodeAt();		
-  let nextIndex = (index-65+displace)%26+65;
-  return String.fromCharCode(nextIndex);
-}

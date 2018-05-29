@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My Messages.com :)</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Messages:)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<center>
+
+<body>
+  <div id="root"></div>
+
+  </head>
+  <center>
     <form name="contenedor">
-        <table border="5">
-          <tr>
-            <td>
-              <p align="center">
-                <b><font color="#c44fd1">MY MESSAGES :)</font></b>
-            </td>
+      <table border="5" width="35%" background="">
+        <tr>
+          <td>
+            <p align="center">
+              <b>MY MESSAGES :)</b>
+          </td>
         </tr>
-          <tr>
-            <td>
-              Your Message:
-              <br>
-              <br>
-              <textarea rows="5" cols="100" name="" id="texto" placeholder="ingresa aqui tu mensaje!"></textarea>
-              <br> 
-              <br>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            Your Message:
             <br>
-            <tr>
-              <th>Nº Display:</th>
-              <td><input type="number" id="displace" placeholder="3" style="width:300px"></td>		
-            </tr>
-            <tr>
-              <br>
-              <br>
-              <td colspan="2" align =center ><input type="button" onclick="process();" value="CONVERTER"></td>
-            </tr>
+            <textarea rows="5" cols="10" name="" id="texto" placeholder="ingresa aqui tu mensaje!"></textarea>
             <br>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <br>
+          <td>Nº Display:
+            <input type="number" id="displace" placeholder="" style="width:50px">
+          </td>
+          <br>
+          <br>
+        </tr>
+        <br>
+        <br>
+        <td>
+          <center>
+            <button class="button" type="button" onclick="process();">encode</button>
+            <button class="button" type="button" onclick="process2();">decode</button>
+            
+          </center>
+        </td>
+        <br>
+        <br>
+        <tr>
+          <td>
+            Your New Message:
             <br>
-            <th>Encrytep:</th>
-            <tr>
-              <td colspan="1"><input type="text" id="result" style="width:300px"></td>
-            </tr>
-          </table>
-        </center>
-  </body>
+            <textarea rows="5" cols="10" name="" id="result" placeholder="ingresa aqui tu mensaje!"></textarea>
+            <input id="xx" type="text" style="width:250px">
+            <br>
+          </td>
+        </tr>
+      </table>
+  </center>
+</body>
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+
 </html>
