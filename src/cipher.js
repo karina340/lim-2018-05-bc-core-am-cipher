@@ -1,4 +1,5 @@
 window.cipher = {
+// encriptando
   encode: function (text, displace) {
 
     text = text.toUpperCase();
