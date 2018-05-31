@@ -1,4 +1,13 @@
- textarea {
+html{
+    font-size:16px;
+    font-family: 'Indie Flower', cursive;
+}
+input{
+    font-size:16px;
+    font-family: 'Indie Flower', cursive;
+}
+
+textarea {
     resize  : none;
     overflow: auto;
     display : block;
@@ -13,10 +22,11 @@ body{
 }
 table{
     background-color: #f4ed9f;
-    padding:10px;
+    padding:20px;
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: fixed;
+    border-radius: 30px;
 }
 
 form{
@@ -26,10 +36,6 @@ form{
     background-attachment: fixed;
 }
 
-input{
-
-}
-
 .button{
     background:#4c4754;
     width: 70px;
@@ -37,6 +43,8 @@ input{
     border: none;
     margin: 20px;
     border-radius: 5px;
+    font-size:16px;
+    font-family: 'Indie Flower', cursive;
 }
 
 
