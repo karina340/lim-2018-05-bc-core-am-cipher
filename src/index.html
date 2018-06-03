@@ -1,51 +1,75 @@
-<center>
-  <form name="contenedor">
-    <table border="5" width="35%" background="">
-      <tr>
-        <td>
-          <p align="center">
-            <b>MY MESSAGES :)</b>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Your Message:
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MY MESSAGES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">/>
+</head>
+<body>
+  <form id="form1">
+    <div id="cabecera">
+    <div id= "contenido cabecera">
+      <div id="barra horizontal">
+        <div id="logotipo">
+  </div>
+  <div id="titulo">
+    <h1>MESSAJES ONLINE ENCRYPTED</h1>
+    <H2>LETS GO!</H2>
+  </form>
+  <div id="root"></div>
+  <center>
+    <form name="contenedor">
+      <table border="0" width="35%" background="">
+        <tr>
+          <td>
+            <p align="center">
+              <b>MY MESSAGES : )</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Your Message:
+            <br>
+            <textarea rows="5" cols="10" name="" id="texto" placeholder="New Message here!"></textarea>
+            <div id="imagen2">
+            <img src="images/amigas.gif" width="40%">
           <br>
-          <textarea rows="5" cols="10" name="" id="texto" placeholder="ingresa aqui tu mensaje!"></textarea>
-          <br>
-        </td>
-      </tr>
-      <br>
-      <tr>
+          </td>
+        </tr>
         <br>
-        <td>Nº Display:
-          <input type="number" id="displace" placeholder="" style="width:50px">
-        </td>
+        <tr>
+          <br>
+          <td>Nº Display:
+            <input type="number" id="displace" placeholder="" style="width:50px">
+          </td>
+          <br>
+          <br>
+        </tr>
         <br>
         <br>
-      </tr>
-      <br>
-      <br>
-      <td>
-        <center>
-          <button class="button" type="button" onclick="process();">encode</button>
-          <button class="button" type="button" onclick="process2();">decode</button>
-          
-        </center>
-      </td>
-      <br>
-      <br>
-      <tr>
         <td>
-          Your New Message:
-          <br>
-          <textarea rows="5" cols="10" name="" id="result" placeholder="ingresa aqui tu mensaje!"></textarea>
-          <input id="xx" type="text" style="width:250px">
-          <br>
+            <div>
+            <button class="button" type="button" onclick="process();">encode</button>
+            <button class="button" type="button" onclick="process2();">decode</button>
+          </div>
         </td>
-      </tr>
-    </table>
-</center>
+        <br>
+        <br>
+        <tr>
+          <td>
+            Your New Message:
+            <br>
+            <input type ="texto" id="result"placeholder="Encrypted"/>
+            <br>
+            <br>
+            <input type ="texto" id="xx"placeholder="
+            Decrypted"/>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </center>
 </body>
 <script src="cipher.js"></script>
 <script src="index.js"></script>

@@ -1,3 +1,49 @@
+html{
+    font-size:16px;
+    font-family: 'Indie Flower', cursive;
+    
+} 
+#cabecera{
+    height: 150px;
+    background-color: black;
+    color:grey;
+    border:1px dashed #f4ed9f;
+    box-shadow:  0px 0px 10px #000;  
+}
+#contenidocabecera{
+width:960px;
+margin:auto;
+
+}
+#barrahorizontal{
+height: 40px;
+background-color: #4c4754;
+border-radius: 0px 0px 10px 10px;
+box-shadow:0px 0px 10px #000 inset;
+}
+#logotipo{
+    width:35%;
+    float:left;
+    text-align: center;
+    margin-top:10px;
+}
+    #logotipo > img{
+        box-shadow: 0px 0px 10px #000;
+    }
+#titulo{
+    width:60%;
+    float:left;
+    text-shadow:2px 2px 3px #000;
+}
+    #titulo > h1{
+        margin-top: 12px;
+
+    }
+input{
+    font-size:16px;
+    font-family: 'Indie Flower', cursive;
+}
+
 textarea {
     resize  : none;
     overflow: auto;
@@ -13,10 +59,11 @@ body{
 }
 table{
     background-color: #f4ed9f;
-    padding:10px;
+    padding:20px;
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: fixed;
+    border-radius: 30px;
 }
 
 form{
@@ -26,17 +73,33 @@ form{
     background-attachment: fixed;
 }
 
-input{
-
-}
-
 .button{
+
+    display: inline-block;
     background:#4c4754;
-    width: 70px;
-    height: 25px;
     border: none;
     margin: 20px;
     border-radius: 5px;
+    font-size:1.6em;
+    font-family: 'Indie Flower', cursive;
+    line-height: 3m;
+    padding:0 1.5em;
+    text-transform: uppercase;
+
+}
+
+.button:hover
+ {
+    background: skyblue;
+ }
+ .button:active{
+transform:scale(.50);
+
+ }
+img{
+    border-radius: 50px;
+    margin: 0 auto;
+    position: left;
 }
 
 
