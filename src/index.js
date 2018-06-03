@@ -1,10 +1,19 @@
-function process(){
-  var string=document.getElementById("texto").value;
-  var offset= parseInt(document.getElementById("displace").value);
-  document.getElementById("result").value = cipher.encode(string,offset);
+let ButtonEncode = document.getElementById("encode");
+let ButtonDecode = document.getElementById("decode");
+let string = '';
+let offset = 0;
+
+function actionData() {
+  string = document.getElementById("texto").value;
+  offset = parseInt(document.getElementById("displace").value);
 }
-function process2(){
-  var string=document.getElementById("texto").value;
-  var offset= parseInt(document.getElementById("displace").value);
-  document.getElementById("xx").value = cipher.decode(string,offset);
-}
+
+ButtonEncode.onclick = function () {
+  actionData();
+  document.getElementById("result").value = cipher.encode(offset, string);
+};
+
+ButtonDecode.onclick = function () {
+  actionData();
+  document.getElementById("result").value = cipher.decode(offset, string);
+};

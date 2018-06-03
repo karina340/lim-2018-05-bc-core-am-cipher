@@ -1,74 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>MY MESSAGES</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">/>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" />
 </head>
+
 <body>
-  <form id="form1">
-    <div id="cabecera">
-    <div id= "contenido cabecera">
-      <div id="barra horizontal">
-        <div id="logotipo">
-  </div>
-  <div id="titulo">
-    <h1>MESSAJES ONLINE ENCRYPTED</h1>
-    <H2>LETS GO!</H2>
-  </form>
-  <div id="root"></div>
-  <center>
-    <form name="contenedor">
-      <table border="0" width="35%" background="">
-        <tr>
-          <td>
-            <p align="center">
-              <b>MY MESSAGES : )</b>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Your Message:
-            <br>
-            <textarea rows="5" cols="10" name="" id="texto" placeholder="New Message here!"></textarea>
-            <div id="imagen2">
-            <img src="images/amigas.gif" width="40%">
-          <br>
-          </td>
-        </tr>
-        <br>
-        <tr>
-          <br>
-          <td>Nº Display:
-            <input type="number" id="displace" placeholder="" style="width:50px">
-          </td>
-          <br>
-          <br>
-        </tr>
-        <br>
-        <br>
-        <td>
-            <div>
-            <button class="button" type="button" onclick="process();">encode</button>
-            <button class="button" type="button" onclick="process2();">decode</button>
-          </div>
-        </td>
-        <br>
-        <br>
-        <tr>
-          <td>
-            Your New Message:
-            <br>
-            <input type ="texto" id="result"placeholder="Encrypted"/>
-            <br>
-            <br>
-            <input type ="texto" id="xx"placeholder="
-            Decrypted"/>
-            <br>
-          </td>
-        </tr>
-      </table>
+  <main class="content">
+    <center>
+      <div class="form">
+        <h1>MESSAJES</h1>
+        <center>
+          <img src="images/amigas.gif">
+        </center>
+        <textarea rows="5" cols="10" name="" id="texto" placeholder="New Message here!"></textarea>
+
+        <label>Nro Display:</label>
+        <input type="number" min="1" id="displace" placeholder="Only numbers">
+        <hr>
+        <button class="button" type="button" id="encode">encode</button>
+        <button class="button" type="button" id="decode">decode</button>
+        <hr>
+        <label>Your New Message:</label>
+        <textarea rows="5" cols="10" name="" id="result" placeholder="New Message here!"></textarea>
+        <label>CESAR CIPHER</label>
+      </div>
+  </main>
   </center>
 </body>
 <script src="cipher.js"></script>
