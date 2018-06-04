@@ -40,7 +40,3 @@ Realize una entrevista a las dos chicas las cuales mostraron su inquietud en enc
 
 2. Prueba de Sistema.
    * Las amigas prueban el sistema y si les funciona.
-
- # Resolucion de Problemas 
-
- Esta aplicacion ayuda a resolver el modo de comunicarse de dos amigas que estan tratando de armar una reunion en secreto. 
