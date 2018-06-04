@@ -87,7 +87,7 @@ img{
           font-family: 'Indie Flower', cursive;
           background: plum;
       }
-  
+    }
 
   @media handheld and (max-width: 480px) and (orientation: landscape) { 
     textarea {
