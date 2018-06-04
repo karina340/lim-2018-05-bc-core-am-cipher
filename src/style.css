@@ -72,5 +72,28 @@ img{
     position: center;
     width:100px;
 }
+@media only screen and (max-width: 768px) {
+    label {
+        font-size: 25px;
+      }
+      textarea {
+          font-size: 25px;
+          text-transform: uppercase;
+      }
+      .button{
+          border-radius: 5px;
+          margin: 20px;
+          font-size:1.7em;
+          font-family: 'Indie Flower', cursive;
+          background: plum;
+      }
+  
 
+  @media handheld and (max-width: 480px) and (orientation: landscape) { 
+    textarea {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
 
+ }
